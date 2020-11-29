@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+.header {
+    padding: 40px 0 40px 0;
+    background-image: url("../banner.svg");
+    background-color: rgb(71, 40, 71);
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sub-menu {
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.sub-menu li {
+    text-align: left;
+}
+
+.inner-menu {
+    position: absolute;
+    background-color: thistle;
+    width: 140px;
+    padding: 10px 0;
+    display: none;
+    left: 0;
+    top: 30px;
+    /* transform: translateX(50%); */
+}
+
+.inner-menu a {
+    text-transform: capitalize;
+    color: rgb(46, 38, 38);
+}
+
+.sub-menu:hover .inner-menu {
+    display: inline-block;
+}
+
+.hero {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-size: 20px;
+    padding: 10px 0;
+    color: rgb(231, 94, 117);
+}
+
+.hero a , .send-btn {
+    background-color: rgb(231, 94, 117);
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.section-magna {
+    background-color:rgb(221, 215, 215);
+    padding: 70px 0;
+}
+
+.magna-intro {
+    text-align: center;
+    padding-bottom: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.magna-intro h2 , .section-consec h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.item {
+    background-color: honeydew;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.item h2{
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.item i {
+    color: rgb(231, 94, 117);
+    font-size: 32px;
+}
+
+.section-consec {
+    background-color: rgb(231, 94, 117);
+    padding: 70px 0;
+    color: white;
+}
+
+.stats.flex{
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stat {
+    background-color:rgb(228, 133, 148);
+    width: 430px;
+    margin-bottom: 30px;
+}
+
+.stat h2 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.sed-faucibus {
+    margin: 70px 0;
+}
+
+.portfolio-item {
+    width: 30%;
+    text-align: center;
+}
+
+.portfolio-item h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 16px;
+    color: black;
+}
+
+.contact {
+    background-color: rgb(221, 215, 215);
+    padding: 70px 0;
+}
+
+.contact-form {
+    background-color: white;
+    /* height: 140px; */
+    padding: 40px;
+}
+
+.form {
+    width: 45%;
+}
+
+.input-forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-forms input {
+    margin: 10px 0;
+}
+
+.input-forms .message {
+    height: 140px;
+}
+
+.send-btn {
+    width: 80px
+}
+
+.address {
+    width: 50%;
+}
+
+.container .contact-form {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: rgb(228, 224, 224);
+    padding: 40px 0;
+    color: grey;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-nav span{
+    margin: 0 10px;
+}
