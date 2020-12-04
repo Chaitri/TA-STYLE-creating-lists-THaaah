@@ -12,34 +12,35 @@
 <body>
     <header class="header">
         <div class="container nav-bar flex">
-            <a href="#">Elevation</a>
+            <a href="#" class="brand">Elevation</a>
             <nav>
-                <ul class="nav-list">
+                <ul class="flex">
                     <li>
                         <a href="#">Home</a>
                     </li>
                     <li class="sub-menu">
                         <a href="#">
+                            <i class="fas fa-chevron-down"></i>
                             <span>Page Layouts</span></a>
-                            <img src="assets/arrow-down-sign-to-navigate.png">
                         </a>
-                        <ul class="inner-menu">
-                            <li>
-                                <a href="#">Left Sidebar</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <a href="#">Right Sidebar</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <a href="#">No Sidebar</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <a href="#">Submenu</a>
-                            </li>
-                        </ul>                
+                        <div class="inner-menu">
+                            <ul >
+                                <li>
+                                    <a href="#">Left Sidebar</a>
+                                </li>
+                                <li>
+                                    <a href="#">Right Sidebar</a>
+                                </li>
+                                <li>
+                                    <a href="#">No Sidebar</a>
+                                </li>
+                                <li>
+                                    <a href="#">Submenu</a>
+                                </li>
+                            </ul>
+                            <i class="fas fa-caret-up"></i>
+                        </div>
+                                        
                     </li>
                     <li>
                         <a href="#">Elements</a>
@@ -50,30 +51,42 @@
         <div class="hero container">
             <h1>Lorem Ipsum Dolor</h1>
             <h2>Voluptate labore temporibus</h2>
-            <a href="#">Magna Sed Etiam</a>
+            <a class="btn btn-primary" href="#">Magna Sed Etiam</a>
         </div>
     </header>
     <main>
         <section class="section-magna">
             <div class="container">
                 <div class="magna-intro">
-                    <h2>Magna Feiguat</h2>
+                    <div class="flex justify-center">
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                        </div>
+                        <h2>Magna Feiguat</h2>
+                        <div class="line-container align-start">
+                            <div class="line"></div>
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                        </div>
+                    </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum iure fugiat adipisci, et sint exercitationem modi saepe nesciunt libero eveniet qui veritatis accusamus eum numquam a consequatur nobis est repellendus.</p>
                 </div>
                 <div class="items flex">
-                    <div class="item">
+                    <div class="item feature">
                         <i class="fas fa-user"></i>
                         <h2>Aliquam Tinci</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia.</p>
                     </div>
-                    <div class="item">
-                        <i class="fas fa-user"></i>
-                        <h2>Aliquam Tinci</h2>
+                    <div class="item feature">
+                        <i class="fas fa-tint"></i>
+                        <h2>Amet Consectetur</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia.</p>
                     </div>
-                    <div class="item">
-                        <i class="fas fa-user"></i>
-                        <h2>Aliquam Tinci</h2>
+                    <div class="item feature">
+                        <i class="fas fa-cog"></i>
+                        <h2>Placeat Qui</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia.</p>
                     </div>
                 </div>
@@ -82,7 +95,19 @@
         <section class="section-consec">
             <div class="container">
                 <div class="magna-intro">
-                    <h2>Magna Feiguat</h2>
+                    <div class="flex justify-center">
+                        <div class="line-container">
+                            <div class="line"></div>
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                        </div>
+                        <h2>Magna Feiguat</h2>
+                        <div class="line-container align-start">
+                            <div class="line"></div>
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                        </div>
+                    </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum iure fugiat adipisci, et sint exercitationem modi saepe nesciunt libero eveniet qui veritatis accusamus eum numquam a consequatur nobis est repellendus.</p>
                 </div>
                 <div class="stats flex">
@@ -92,17 +117,17 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia.</p>
                     </div>
                     <div class="item stat">
-                        <i class="fas fa-chart-bar"></i>
+                        <i class="fas fa-cog"></i>
                         <h2>Aliquam Tinci</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia.</p>
                     </div>
                     <div class="item stat">
-                        <i class="fas fa-chart-bar"></i>
+                        <i class="fas fa-laptop"></i>
                         <h2>Aliquam Tinci</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia.</p>
                     </div>
                     <div class="item stat">
-                        <i class="fas fa-chart-bar"></i>
+                        <i class="fas fa-check"></i>
                         <h2>Aliquam Tinci</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse error atque placeat qui sint mollitia.</p>
                     </div>
@@ -111,23 +136,35 @@
         </section>
         <section class="sed-faucibus">
             <div class="magna-intro">
-                <h2>Sed Faucibus</h2>
+                <div class="flex justify-center">
+                    <div class="line-container">
+                        <div class="line"></div>
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                    </div>
+                    <h2>Sed Faucibus</h2>
+                    <div class="line-container align-start">
+                        <div class="line"></div>
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                    </div>
+                </div>
             </div>
             <div class="container flex portfolio">
                 <div class="portfolio-item">
-                    <img src="assets/pic01.jpg">
+                    <img src="assets/pic01.jpg" alt="photograpger">
                     <h3>Etiam Interdum</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas tempora facere maxime.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div class="portfolio-item">
-                    <img src="assets/pic02.jpg">
+                    <img src="assets/pic02.jpg" alt="typewritter">
                     <h3>Etiam Interdum</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas tempora facere maxime.</p>
                     <a href="#">Learn More</a>
                 </div>
                 <div class="portfolio-item">
-                    <img src="assets/pic03.jpg">
+                    <img src="assets/pic03.jpg" alt="phone">
                     <h3>Etiam Interdum</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas tempora facere maxime.</p>
                     <a href="#">Learn More</a>
@@ -136,60 +173,99 @@
         </section>
         <section class="contact">
             <div class="magna-intro">
-                <h2>Contact</h2>
+                <div class="flex justify-center">
+                    <div class="line-container">
+                        <div class="line"></div>
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                    </div>
+                    <h2>Contact</h2>
+                    <div class="line-container align-start">
+                        <div class="line"></div>
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                    </div>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem harum quae officiis optio necessitatibus beatae quaerat molestiae consequuntur facilis. Et corporis nihil cum corrupti beatae provident, dolorum ab nobis.</p>
             </div>
             <div class="container">
                 <div class="contact-form flex">
                     <div class="form">
                         <div class="input-forms">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Message" class="message">
-                            <a href="#" class="send-btn">Send</a>
+                            <form action="">
+                                <input class="form-control" type="text" placeholder="Name">
+                                <input class="form-control" type="email" placeholder="Email">
+                                <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                                <div>
+                                    <button class="btn btn-primary">Send</button>
+                                    <button class="btn btn-secondary">Reset</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="address">
-                        <i class="fas fa-map-marker"></i>
-                        <span>Untitled Corporation</span>
-                        <hr>
-                        <i class="fas fa-phone"></i>
-                        <span>(000) 000 - 0000  x1234</span>
-                        <hr>
-                        <i class="fas fa-envelope-open"></i>
-                        <span>information@untitled.tld</span>
-                        <hr>
-                        <i class="fab fa-twitter-square"></i>
-                        <span>twitter.com/untitled-tld</span>
-                        <hr>
-                        <i class="fab fa-facebook"></i>
-                        <span>facebook.com/untitled-tld</span>
-                        <hr>
-                        <i class="fab fa-linkedin"></i>
-                        <span>linkedin.com/untitled-tld</span>
-                        <hr>
+                        <div class="address-item">
+                            <div class="address-icon">
+                                <i class="address-icon fas fa-map-marker"></i>
+                            </div>
+                            <span>Untitled Corporation</span>
+                        </div>
+                        <div class="address-item">
+                            <div class="address-icon">
+                                <i class="address-icon fas fa-phone"></i>
+                            </div>
+                            <span>(000) 000 - 0000  x1234</span>
+                        </div>
+                        <div class="address-item">
+                            <div class="address-icon">
+                                <i class="address-icon fas fa-envelope-open"></i>
+                            </div>
+                            <span>information@untitled.tld</span>
+                        </div>
+                        <div class="address-item">
+                            <div class="address-icon twitter">
+                                <i class="address-icon fab fa-twitter-square"></i>
+                            </div>
+                            <span>twitter.com/untitled-tld</span>
+                        </div>
+                        <div class="address-item">
+                            <div class="address-icon facebook">
+                                <i class="address-icon fab fa-facebook"></i>
+                            </div>
+                            <span>facebook.com/untitled-tld</span>
+                        </div>
+                        <div class="address-item">
+                            <div class="address-icon linkedin">
+                                <i class="address-icon fab fa-linkedin"></i>
+                            </div>
+                            <span>linkedin.com/untitled-tld</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container info">
-            <ul class="footer-nav">
-                <li>
-                    <span>About</span>
-                    <span>|</span>
-                </li>
-                <li>
-                    <span>Terms of Use</span>
-                    <span>|</span>
-                </li>
-                <li>
-                    <span>Privacy Police</span>
-                    <span>|</span>
-                </li>
-                <li>Contact Us</li>
-            </ul>
+        <div class="container">
+            <nav>
+                <ul class="flex footer-menu">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright-info">
+                <small>&copy; Untitled. All rights reserved</small>
+            </div>
         </div>
     </footer>
 </body>
